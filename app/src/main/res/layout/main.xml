@@ -7,6 +7,16 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LoLInfo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        />
+
     <Button
         android:id="@+id/button_info"
         android:layout_width="match_parent"
@@ -22,4 +32,12 @@
         android:text="Statistics"
         android:layout_marginTop="40dp"
         android:onClick="goToStatistics"/>
+
+    <Button
+        android:id="@+id/button_sports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-Sports"
+        android:layout_marginTop="40dp"
+        android:onClick="goToESports"/>
 </LinearLayout>
