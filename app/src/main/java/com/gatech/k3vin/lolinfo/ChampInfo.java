@@ -50,6 +50,7 @@ public class ChampInfo extends ListActivity {
             public void onItemClick(AdapterView<?> paret, View viewClicked, int position, long id) {
                 TextView textView = (TextView)viewClicked;
                 String message = "You Clicked # " + position + ", which is string: " + textView.getText().toString();
+                System.out.println(message);
                 //Open webpage
                 StringBuilder buff = new StringBuilder();
                 buff.append("http://leagueoflegends.wikia.com/wiki/");

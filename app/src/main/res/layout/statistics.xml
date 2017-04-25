@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".Statistics">
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player's IGN:" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@+id/textView1"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:onClick="searchPlayer"
+        android:text="Search For Player"
+        android:layout_margin="100dp"
+        />
 </LinearLayout>

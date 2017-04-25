@@ -11,11 +11,15 @@
         android:id="@+id/button_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Champion Information" />
+        android:text="Champion Information"
+        android:layout_marginTop="100dp"
+        android:onClick="goToChampInfo"/>
 
     <Button
         android:id="@+id/button_stats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Statistics" />
+        android:text="Statistics"
+        android:layout_marginTop="40dp"
+        android:onClick="goToStatistics"/>
 </LinearLayout>
