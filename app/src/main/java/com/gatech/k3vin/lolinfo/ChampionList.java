@@ -2,6 +2,7 @@ package com.gatech.k3vin.lolinfo;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -16,14 +17,22 @@ public class ChampionList {
         makeList();
     }
 
-    public void makeList() throws IOException{
-        Scanner sc = new Scanner(new File("ChampNames.txt"));
-        ArrayList<String> lines = new ArrayList<String>();
-        while(sc.hasNextLine()) {
-            lines.add(sc.nextLine());
+    public void makeList() {
+        try{
+            Scanner sc = new Scanner(new File("ChampNames.txt"));
+            ArrayList<String> lines = new ArrayList<String>();
+            while(sc.hasNextLine()) {
+                lines.add(sc.nextLine());
+            }
+            for(int i = 0; i < lines.size(); i++) {
+                champList.add(new Champion(lines.get(i)));
+            }
+        } catch(IOException e) {
+            System.out.println(e.getMessage());
         }
-        for(int i = 0; i < lines.size(); i++) {
-            champList.add(new Champion(lines.get(i)));
-        }
+    }
+
+    public int getSize() {
+        return champList.size();
     }
 }

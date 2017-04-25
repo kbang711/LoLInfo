@@ -25,11 +25,11 @@ public class Champion implements Serializable {
 
     public Champion(String name) {
         this.name = name;
-        this.p = NULL;
-        this.q = NULL;
-        this.w = NULL;
-        this.e = NULL;
-        this.r = NULL;
+        this.p = null;
+        this.q = null;
+        this.w = null;
+        this.e = null;
+        this.r = null;
     }
 
     public String getName() {
